@@ -1,4 +1,5 @@
 ---
+import { Icon } from 'astro-icon/components';
 	interface Props {
 		title: string;
 	}
@@ -35,9 +36,26 @@
 </head>
 
 <body>
-	<div class="header">
-		<div class="container header_info">
-			Contenido de la cabecera
+	<div class="bg-zinc-800">
+		<div class="container flex items-center" >
+			
+			<img src="/public/aliexpress.webp" alt="" class="h-16">
+			<div class="relative">
+            <input  placeholder="Buscar..." class="h-9 rounded-full pl-5 pr-14 outline-none"/>
+			<div class="bg-zinc-800 right-1 top-[2px] absolute inline-block text-white rounded-2xl py-1 px-2" >
+				<Icon name="mdi:search" class="size-6" />
+			</div>
+			    
+			</div>
+			<div class="text-white flex  items-center " >
+               <Icon name="mdi:qrcode" class="ml-6 mr-3 size-12 " />
+			   <p class="leading-2">Descarga la app <br> de Aliexpress</p>
+			   
+			</div>
+			<div>
+				<Icon name="flagpack:co" />
+			</div>
+			
 
 		</div>
 	</div>
@@ -93,12 +111,9 @@
 	.main_menu a:hover{
 		background: #F0A202;
 	}
-    .header{
-		background: orange;
-	}
-	.header_info{
-		height: 80px;
-	}
+   
+	
+	
 	.banner {
 		height: 240px;
 	}
@@ -126,11 +141,7 @@
 	.footer{
 		height: 80px;
 	}
-    .container {
-		max-width: 1280px;
-		/* background: blue; */
-		margin: 0 auto; 
-	}
+    
 
 
 	html, body {
